@@ -29,11 +29,11 @@ darkmode: false
 # googleplus_username: +jekyll
 # orcid_username: 0000-0000-0000-0000
 
-[//]: ## Additional icon links
-[//]: #additional_links:
-[//]: #- title: itsgoingto.be
-[//]: #  icon: fas fa-globe
-[//]: #  url: https://www.itsgoingto.be
+## Additional icon links
+additional_links:
+- title: google scholar
+  icon: fas fa-globe
+  url: https://scholar.google.com/citations?user=V0918CIAAAAJ&hl=en
 [//]: # # - title: another link
 [//]: # #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
 [//]: # #   url: Link url (eg. https://google.com)
@@ -48,9 +48,10 @@ darkmode: false
 # about_title: About Me
 about_profile_image: images/PXL_20231028_230423145~2.jpg
 about_content: | # this will include new lines to allow paragraphs
-  I'm a PhD candidate at Northwestern University. My research centers the design of machine learning systems augmented with efficient cryptography in order to guarantee trustworthy properties such as privacy and fairness. 
+  I'm a PhD candidate at Northwestern University, advised by Xiao Wang. My research leverages efficient cryptography to create machine learning methods that are private, practical, and accountable. My work is funded by an NSF GRFP. Recently I was a visiting professor in the Reed College Computer Science Department. 
 
-  This website is still under construction!
+  
+  
 
 [//]: #   blah
 
