@@ -4,7 +4,8 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Olive Franzese - PhD Candidate</title>
+  <title>Olive Franzese-McLaughlin - Distinguished Postdoctoral
+Fellow</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -27,63 +28,179 @@
 </head>
 <body>
 <body style="margin:18%">
-<h1 id="olive-franzese">Olive Franzese</h1>
-<p><img src="headshot.jpg" 
-     width="225" /> <!-- <img src="headshot.jpg" 
+<h1 id="olive-franzese-mclaughlin">Olive Franzese-McLaughlin</h1>
+<p><img style="float: left; margin-right:50px;"  src="headshot.jpg" width="225"></p>
+<!-- <img src="headshot.jpg" 
+     width="225" />
+-->
+<!-- <img src="headshot.jpg" 
      width="225" 
      height="445" />
---> <br> <br> <br></p>
+-->
+<p><br> <br> <br></p>
 <h2 id="about-me">About Me</h2>
 <ul>
-<li>PhD Candidate in applied cryptography at Northwestern, defending Dec
-2024 (advisor: <a href="https://wangxiao1254.github.io/">Xiao
-Wang</a>)</li>
-<li>Former Visiting Professor at Reed College (1-semester appointment
-Spring 2023)</li>
-<li>Postdoc at University of Toronto, starting Jan 2025 (advisor:
-<a href="https://www.papernot.fr/">Nicolas Papernot</a>)</li>
+<li>Postdoc at Vector Institute &amp; University of Toronto (advised by
+<a href="https://www.papernot.fr/">Nicolas Papernot</a>;
+<a href="https://vectorinstitute.ai/programs/vector-postdoctoral-fellows/">Vector
+Distinguished Postdoctoral Fellowship</a>)</li>
+<li>Former Visiting Professor at <a
+href="https://www.reed.edu/ir/phd.html">Reed College</a></li>
+<li>PhD Northwestern University (advised by
+<a href="https://wangxiao1254.github.io/">Xiao Wang</a>;
+<a href="https://www.nsfgrfp.org/">NSF GRFP</a>)</li>
+<li>MSci University of Maryland (advised by
+<a href="https://www.linkedin.com/in/max-leiserson">Max Leiserson</a>;
+<a href="https://www.cancer.gov/grants-training/training/at-nci/crta">NCI
+CRTA</a>)</li>
+<li>BA Reed College (advised by
+<a href="https://www.reed.edu/biology/ritz/">Anna Ritz</a> and
+<a href="https://people.reed.edu/~agroce/">Adam Groce</a>)</li>
 <li><a href="https://scholar.google.com/citations?user=V0918CIAAAAJ&hl=en&oi=ao">Google
 Scholar.</a></li>
 </ul>
-<p><br> <br> <br></p>
+<p><br> <br> <br> <br> <br> <br> <br></p>
 <h2 id="research">Research</h2>
-<p>My research is at the intersection of concretely efficient
-cryptography and machine learning. I am primarily interested in
-designing methods that use zero-knowledge proofs and secure multiparty
-computation to audit and verify the <em>trustworthyness</em> of machine
-learning models.</p>
-<p>Cryptographic verification creates an avenue of accountability for ML
-service providers, even in the presence of misaligned incentives and/or
-adversarial behavior. It also allows service providers build trust by
-<em>actively</em> attesting that their models are trustworthy, without
-revealing any information about user data or proprietary model
-parameters. My published works in this line include methods for
-cryptographic verification of fairness using zero-knowledge proofs
-(<a href="ICLR-2023-confidential.pdf">ICLR ’23</a>,
+<p>My work is about auditing AI/ML systems without leaking sensitive
+information, by using secure cryptographic protocols. This allows
+auditors to provably verify that AI/ML systems are reliable, unbiased,
+and privacy-preserving, even in the presence of
+<a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing">misaligned</a>
+<a href="https://www.wired.com/story/apple-differential-privacy-shortcomings/">incentives</a>
+and/or
+<a href="https://www.theregreview.org/2025/03/18/phillips-algorithms-deny-humans-health-care/">adversarial</a>
+<a href="https://en.wikipedia.org/wiki/Volkswagen_emissions_scandal">behavior</a>.
+It also allows service providers build trust by <em>actively</em>
+attesting that their models are trustworthy, without revealing any
+information about user data or proprietary model parameters. I believe
+techniques like these are integral building blocks for effective
+regulation of AI/ML.</p>
+<p>My published works in this area include methods for cryptographic
+verification of <a href="#fair-trees">fairness</a>
+(<a href="https://www.turing.ac.uk/blog/turings-top-10-research-highlights-2022-23">Alan
+Turing Institute Research Highlight</a>, <a href="#oath">+ followup
+work</a>), <a href="#secure-calibration">confidence calibration</a>, <a
+href="#secure-noise-sampling">differential privacy</a>, and <a
+href="#p2p-learning">robustness</a> using zero-knowledge proofs and
+secure multiparty computation. I’ve worked on efficient zero-knowledge
+proof <a href="#zkram">building blocks</a> as well.</p>
+<p>I have also contributed work on data-driven computational biology
+algorithms for <a href="#scalpelsig">cancer diagnostics that are more
+accessible to patients</a>, <a href="#hypergraph">signaling pathway
+extraction</a> from protein-protein interaction data, and <a
+href="#crossplan">systematic experiment planning</a>. In ancient
+history, I was a <a href="#wet">wet</a> <a href="#lab">lab</a> <a
+href="#bio">bio</a><a href="#logist">logist</a>.</p>
+<h2 id="publications">Publications</h2>
+<ol type="1">
+<li><a href="secure_noise_sampling_preprint.pdf">Secure Noise Sampling
+for Differentially Private Collaborative
+Learning</a><a name="secure-noise-sampling"> </a> <strong>Olive
+Franzese</strong>, C Fang, R Garg, S Jha, N Papernot, X Wang, A
+Dziedzic. Accepted to ACM CCS ’25. <br></li>
+<li><a href="confidential_guardian_preprint.pdf">Confidential Guardian:
+Cryptographically Prohibiting the Abuse of Model
+Abstention</a><a name="secure-calibration"> </a> S Rabanser, AS
+Shamsabadi, <strong>Olive Franzese</strong>, X Wang, A Weller, N
+Papernot. Accepted to ICML ’25. <br></li>
+<li><a href="https://arxiv.org/pdf/2410.02777">OATH: Efficient and
+Flexible Zero-Knowledge Proofs of End-to-End ML
+Fairness</a><a name="oath"> </a> <strong>Olive Franzese</strong>, AS
+Shamsabadi, H Haddadi. arXiv preprint. <br></li>
+<li><a href="NeuRIPS-2023-robust.pdf">Robust and actively secure
+serverless collaborative learning</a><a name="p2p-learning"> </a>
+<strong>Olive Franzese</strong>, A Dziedzic, C Choquette-Choo, M Thomas,
+M Kaleem, S Rabanser, C Fang, S Jha, N Papernot, X Wang. NeurIPS 2023.
+<br></li>
+<li><a href="ICLR-2023-confidential.pdf">Confidential-PROFITT:
+Confidential PROof of FaIr Training of Trees</a><a name="fair-trees">
+</a> AS Shamsabadi, S Wyllie, <strong>Olive Franzese</strong>, N
+Dullerud, S Gambs, N Papernot, X Wang, A Weller. ICLR 2023. <em>Notable
+Top 5% Commendation.</em>
 <a href="https://www.turing.ac.uk/blog/turings-top-10-research-highlights-2022-23">
 <strong>Alan Turing Institute Top 10 Research Highlight of
-2022-23</strong></a>), verified confidentiality and robustness in
-distributed model training via secure multiparty computation
-(<a href="NeuRIPS-2023-robust.pdf">NeuRIPS ’23</a>), and efficient
-zero-knowledge proof building blocks
-(<a href="CCS-2021-Constant.pdf">CCS ’21</a>).</p>
-<p>I have also worked in data-driven computational biology. I designed
-an ML method to improve clinical accessibility of
-mutational-signature-based cancer diagnostics
-(<a href="RECOMB-2021-scalpelsig.pdf">RECOMB ’21</a>), algorithms for
-extracting signaling pathways from protein-protein interaction data
-(<a href="ploscompbiol-2019-hypergraph.pdf">PLoS Comp Biol 2019</a>),
-and analyzed a method for systematic experiment planning
-(<a href="Bioinformatics-2018-crossplan.pdf">Bioinformatics
-2018</a>).</p>
-<p>I am an <a href="https://www.nsfgrfp.org/">NSF GRFP</a> fellow, and a
+2022-23</strong>. <br></li>
+<li><a href="CCS-2021-Constant.pdf">Constant-overhead zero-knowledge for
+RAM programs</a><a name="zkram"> </a> <strong>Olive Franzese</strong>, J
+Katz, S Lu, R Ostrovsky, X Wang, C Weng. ACM CCS 2021. <br></li>
+<li><a href="RECOMB-2021-scalpelsig.pdf">ScalpelSig Designs Targeted
+Genomic Panels from Data to Detect Activity of Mutational
+Signatures</a><a name="scalpelsig"> </a> <strong>Olive
+Franzese</strong>, J Fan, R Sharan, MDM Leiserson. RECOMB 2021, Journal
+of Computational Biology 2022.</li>
+<li><a href="ploscompbiol-2019-hypergraph.pdf">Hypergraph-based
+connectivity measures for signaling pathway
+topologies</a><a name="hypergraph"> </a> <strong>Olive
+Franzese</strong>, A Groce, TM Murali, A Ritz. PLoS Comp Biol 2019.
+<br></li>
+<li><a href="Bioinformatics-2018-crossplan.pdf">CrossPlan: systematic
+planning of genetic crosses to validate mathematical
+models</a><a name="crossplan"> </a> A Pratapa, N Adames, P Kraikivski,
+<strong>Olive Franzese</strong>, J J Tyson, J Peccoud, TM Murali.
+Bioinformatics 2018. <br></li>
+<li><a href="https://doi.org/10.1371/journal.pone.0076329">Stem
+Cell-Like Dog Placenta Cells Afford Neuroprotection against Ischemic
+Stroke Model via Heat Shock Protein Upregulation</a><a name="wet"> </a>
+S Yu, N Tajiri, <strong>Olive Franzese</strong>, M Franzblau, E Bae, S
+Platt, Y Kaneko, C V Borlongan. PLoS One 2013. <br></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3845524/">Human
+umbilical cord blood for transplantation therapy in myocardial
+infarction</a><a name="lab"> </a> S A Acosta, <strong>Olive
+Franzese</strong>, M Staples, N L Weinbren, M Babilonia, J Patel, N
+Merchant, A J Simancas, A Slakter, M Caputo, M Patel, G Franyuti, M H
+Franzblau, L Suarez, C Gonzales-Portillo, T Diamandis, K Shinozuka, N
+Tajiri, P R Sanberg, Y Kaneko, L W Miller, C V Borlongan. Journal of
+stem cell research &amp; therapy 2013. <br></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3595340/pdf/nihms435583.pdf">Stroke
+in the eye of the beholder</a><a name="bio"> </a> H Ishikawa, M Caputo,
+<strong>Olive Franzese</strong>, N L Weinbren, A Slakter, M Patel, C E
+Stahl, M A Jacotte, S Acosta, G Franyuti, K Shinozuka, N Tajiri, H van
+Loveren, Y Kaneko, C V Borlongan. Med Hypotheses 2013. <br></li>
+<li><a href="https://doi.org/10.3727/215517912X639306">Nestin
+overexpression precedes caspase-3 upregulation in rats exposed to
+controlled cortical impact traumatic brain injury</a><a name="logist">
+</a> Y Kaneko, N Tajiri, S Yu, T Hayashi, C E Stahl, E Bae, H Mestre,
+<strong>Olive Franzese</strong>, A Rodrigues Jr, M C Rodrigues, H
+Ishikawa, K Shinozuka, W Hethorn, N Weinbren, L E Glover, J Tan, A H
+Achyuta, H Van Loveren, P R Sanberg, S Shivsankar, C V Borlongan. Cell
+medicine 2012. <br></li>
+</ol>
+<h2 id="funding">Funding</h2>
+<p>I am a
+<a href="https://vectorinstitute.ai/programs/vector-postdoctoral-fellows/">Vector
+Distinguished Postdoctoral Fellow</a>, an
+<a href="https://www.nsfgrfp.org/">NSF GRFP</a> fellow, and a
 <a href="https://www.cancer.gov/grants-training/training/at-nci/crta">National
 Cancer Institute CRTA</a> recipient.</p>
 <p><br> <br> <br></p>
-<h2 id="teaching">Teaching</h2>
-<p>Teaching is the thing that drives me to be an academic. The quality
-of my teaching is extremely important to me. Below are some of my
+<h2 id="teaching-mentorship">Teaching &amp; Mentorship</h2>
+<p>Teaching and mentoring students is very important to me. In my
+pedagogy, I aim to expose the deep and compelling questions that
+underlie computing, rather than just teaching about the specifics of
+computing systems themselves. I take a lot of inspiration from the
+writings of contemporary mathematics educator
+<a href="https://www.mimuw.edu.pl/~pawelst/rzut_oka/Zajecia_dla_MISH_2011-12/Lektury_files/LockhartsLament.pdf">Paul
+Lockhart</a>, and seek to apply his insights in computer science
+education. I am especially interested in the developing role of
+computing as part of a liberal arts education. I think we are in great
+need of computing practitioners who can reason about the social context
+surrounding computing, in addition to programs themselves. I think a
+liberal arts education is exactly the right place to cultivate students
+with mastery of both. I was on the ACM SIGSCE 2025
+<a href=https://computing-in-the-liberal-arts.github.io/>Committee on
+Computing Education in Liberal Arts Colleges</a>. Below are some of my
 experiences in undergraduate teaching and mentorship.</p>
+<h3 id="research-advisees">Research Advisees</h3>
+<ul>
+<li>Patrick Norton (Incoming Post-Bac Internship 2025)</li>
+<li>Carter Luck (Post-Bac Internship 2025 → PhD UMass Amherst)</li>
+<li>Elle Wen (Undergraduate Thesis 2023-24 → MSci Waterloo) - Fuzzy
+private set intersection for satellite collision detection</li>
+<li>Lydia Longfritz (Undergraduate Internship 2023) - Secure multiparty
+computation for privacy-preserving mutational signature analysis</li>
+<li>John Poole (Undergraduate Thesis 2022-23 → MPhil Cambridge) -
+Cellular automata simulation of cancer ecology</li>
+</ul>
 <h3 id="visiting-professor-reed-college">Visiting Professor, Reed
 College</h3>
 <ul>
@@ -91,9 +208,7 @@ College</h3>
 <ul>
 <li>an introductory systems-level programming course in C, MIPS
 Assembly, and C++.</li>
-<li>selected student comments
-(<a href="csci221_student_evaluations_s2023.pdf">full course evaluation
-here</a>):
+<li>selected student comments:
 <ul>
 <li><blockquote>
 <em>“I loved the energy of the lectures and the learning environment,
@@ -122,16 +237,9 @@ class, and though I’ve stopped going out of my way to give a 110 percent
 in college, this class was the one exception.”</em>
 </blockquote></li>
 </ul></li>
+<li><a href="csci221_student_evaluations_s2023.pdf">full course
+evaluation here</a></li>
 </ul></li>
-</ul>
-<h3 id="research-advisees">Research Advisees</h3>
-<ul>
-<li>Elle Wen (Undergraduate Thesis 2023-24) - Fuzzy private set
-intersection for satellite collision detection</li>
-<li>Lydia Longfritz (Summer 2023) - Secure multiparty computation for
-privacy-preserving mutational signature analysis</li>
-<li>John Poole (Undergraduate Thesis 2022-23) - Cellular automata
-simulation of cancer ecology</li>
 </ul>
 <h3 id="graduate-ta-northwestern-university-of-maryland">Graduate TA,
 Northwestern &amp; University of Maryland</h3>
@@ -147,52 +255,6 @@ Teaching Assistant, Reed College</h3>
 <li><strong>MATH 121: INTRODUCTION TO COMPUTING
 (2017-2019)</strong></li>
 </ul>
-<p><br> <br> <br></p>
-<h2 id="publications">Publications</h2>
-<ol type="1">
-<li><strong>Olive Franzese</strong>, Adam Dziedzic, Christopher
-Choquette-Choo, Mark R Thomas, Muhammad Ahmad Kaleem, Stephan Rabanser,
-Congyu Fang, Somesh Jha, Nicolas Papernot, Xiao Wang. Doubly Robust
-Peer-To-Peer Learning Protocol. NeurIPS 2023. <br></li>
-<li>Ali Shahin Shamsabadi, Sierra Calanda Wyllie, <strong>Olive
-Franzese</strong>, Natalie Dullerud, Sébastien Gambs, Nicolas Papernot,
-Xiao Wang, Adrian Weller. Confidential-PROFITT: Confidential PROof of
-FaIr Training of Trees. ICLR 2023. <em>Notable Top 5% Paper. Alan Turing
-Institute Top 10 Research Project 2022-23.</em> <br></li>
-<li><strong>Olive Franzese</strong>, Jason Fan, Roded Sharan, Mark D. M.
-Leiserson. ScalpelSig Designs Targeted Genomic Panels from Data to
-Detect Activity of Mutational Signatures. J. Comput. Biol. 29(1): 56-73
-(2022). <br></li>
-<li><strong>Olive Franzese</strong>, Jonathan Katz, Steve Lu, Rafail
-Ostrovsky, Xiao Wang, Chenkai Weng. Constant-Overhead Zero-Knowledge for
-RAM Programs. CCS 2021: 178-191. <br></li>
-<li><strong>Olive Franzese</strong>, Adam Groce, T. M. Murali, Anna M.
-Ritz. Hypergraph-based connectivity measures for signaling pathway
-topologies. PLoS Comput. Biol. 15(10) (2019). <br></li>
-<li>Aditya Pratapa, Neil Adames, Pavel K. Brazhnik, <strong>Olive
-Franzese</strong>, John J. Tyson, Jean Peccoud, T. M. Murali. CrossPlan:
-systematic planning of genetic crosses to validate mathematical models.
-Bioinformatics. 34(13): 2237-2244 (2018). <br></li>
-<li>Seongjin Yu, Naoki Tajiri, <strong>Olive Franzese</strong>, Max
-Franzblau, Eunkyung Bae, Simon Platt, Yuji Kaneko, Cesar V Borlongan.
-Stem cell-like dog placenta cells afford neuroprotection against
-ischemic stroke model via heat shock protein upregulation. PLoS One.
-2013 Sep 25;8(9):e76329. doi: 10.1371/journal.pone.0076329. <br></li>
-<li>Yuji Kaneko, Naoki Tajiri, SeongJin Yu, Takuro Hayashi, Christine E
-Stahl, Eunkyung Bae, Humberto Mestre, <strong>Olive Franzese</strong>,
-Antonio Rodrigues Jr, Maria C Rodrigues, Hiroto Ishikawa, Kazutaka
-Shinozuka, Whitney Hethorn, Nathan Weinbren, Loren E Glover, Jun Tan,
-Anilkumar Harapanahalli Achyuta, Harry Van Loveren, Paul R Sanberg,
-Sundaram Shivsankar, Cesar V Borlongan. Nestin overexpression precedes
-caspase-3 upregulation in rats exposed to controlled cortical impact
-traumatic brain injury. Cell Medicine. 2012 Jul;4(2):55-63. <br></li>
-<li>Hiroto Ishikawa, Mathew Caputo, <strong>Olive Franzese</strong>,
-Nathan L Weinbren, Adam Slakter, Milan Patel, Christine E Stahl, Maria
-Alejandra Jacotte, Sandra Acosta, Giorgio Franyuti, Kazutaka Shinozuka,
-Naoki Tajiri, Harry van Loveren, Yuji Kaneko, Cesar V Borlongan. Stroke
-in the Eye of the Beholder. Medical Hypotheses. 2013 Apr
-1;80(4):411-5.</li>
-</ol>
 <!-- ![](buttons/translesbian.gif)  (image incantation)  -->
 <!-- ![](headshot.jpg) -->
 </body>
